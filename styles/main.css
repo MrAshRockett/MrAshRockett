@@ -1,3 +1,103 @@
-body {
-  background-color: pink;
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+  box-sizing: border-box;
+}
+
+/*    Colour book    */
+
+.red {background-color: #ea2645;}
+.yellow {background-color: #f9f94d;}
+.blue {background-color: #29c0f6;}
+.black {background-color: #111111;}
+.white {background-color: #eeeeee;}
+
+/*        MOBILE FIRST         */
+/*     STYLING STARTS HERE     */
+
+@media only screen and (min-width: 360px) {
+  
+  body {
+    background-color: rgb(219, 219, 219);
+  }
+
+  .page-wrapper {
+    width: 96%;
+    margin: 0 auto;
+  }
+
+  .container {
+    height: 300px;
+    border:rgb(219, 219, 219) solid 5px
+  }
+
+  .col {
+    float: left;
+    padding: 15px;
+  }
+
+  .row::after {
+    display: block;
+    clear: both;
+    content: "";
+  }
+
+  .col-1-S {width: 8.33%;}
+  .col-2-S {width: 16.66%;}
+  .col-3-S {width: 25%;}
+  .col-4-S {width: 33.33%;}
+  .col-5-S {width: 41.66%;}
+  .col-6-S {width: 50%;}
+  .col-7-S {width: 58.33%;}
+  .col-8-S {width: 66.66%;}
+  .col-9-S {width: 75%;}
+  .col-10-S {width: 83.33%;}
+  .col-11-S {width: 91.66%;}
+  .col-12-S {width: 100%;}
+
+
+}
+
+
+@media only screen and (min-width: 720px) {
+  
+  .page-wrapper {
+    width: 85%;
+    margin: 0 auto;
+  }
+  
+  .col-1-M {width: 8.33%;}
+  .col-2-M {width: 16.66%;}
+  .col-3-M {width: 25%;}
+  .col-4-M {width: 33.33%;}
+  .col-5-M {width: 41.66%;}
+  .col-6-M {width: 50%;}
+  .col-7-M {width: 58.33%;}
+  .col-8-M {width: 66.66%;}
+  .col-9-M {width: 75%;}
+  .col-10-M {width: 83.33%;}
+  .col-11-M {width: 91.66%;}
+  .col-12-M {width: 100%;}
+}
+
+@media only screen and (min-width: 1080px) {
+  
+  .page-wrapper {
+    width: 75%;
+  }
+
+  .col-1-L {width: 8.33%;}
+  .col-2-L {width: 16.66%;}
+  .col-3-L {width: 25%;}
+  .col-4-L {width: 33.33%;}
+  .col-5-L {width: 41.66%;}
+  .col-6-L {width: 50%;}
+  .col-7-L {width: 58.33%;}
+  .col-8-L {width: 66.66%;}
+  .col-9-L {width: 75%;}
+  .col-10-L {width: 83.33%;}
+  .col-11-L {width: 91.66%;}
+  .col-12-L {width: 100%;}
 }
