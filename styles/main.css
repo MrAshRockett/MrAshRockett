@@ -13,37 +13,90 @@ html {
 
 /*    Colour book    */
 
-.magenta {background-color: #E00084;}
-.yellow {background-color: #f9f94d;}
-.blue {background-color: #29c0f6;}
+.magenta {
+  background-color: #E00084;
+  transition-duration: 1s;
+}
+.magenta:hover {
+  background-color: #ff79c7;
+  transition-duration: 1s;
+}
+.yellow {
+  background-color: #f9f94d;
+  transition-duration: 1s;
+}
+.yellow:hover {
+  background-color: #ffa424;
+  transition-duration: 1s;
+}
+.blue {
+  background-color: #29c0f6;
+  transition-duration: 1s;
+}
+.blue:hover {
+  background-color: #00d2ba;
+  transition-duration: 1s;
+}
 .black {
   background-color: #111111;
   transition-duration: 1s;
 }
-.white {background-color: #ffffff;}
+.black:hover {
+  background-color: darkslategray;
+  transition-duration: 1s;
+}
+.white {
+  background-color: #ffffff;
+  transition-duration: 1s;
+}
+.white:hover {
+  background-color: #d1d1d1;
+  transition-duration: 1s;
+}
 
 /*        MOBILE FIRST         */
 /*     STYLING STARTS HERE     */
 
-@media only screen and (min-width: 360px) {
+@media only screen and (min-width: 320px) {
   
   body {
     background-color: rgb(219, 219, 219);
   }
 
-  h1 {
+  #hero-title {
     font-size: 0.8em;
     padding: 100px 0 5px 5px;
   }
 
-  h2, h3, h4, h5, h6 {
+  .main-headings {
     font-family: 'Roboto', sans-serif;
     font-weight: 600;
     padding: 10px 0 10px 0;
     font-size: 3.6em;
   }
 
-  p {
+  .links {
+    color: black;
+    transition-duration: 1s;
+  }
+
+  .links:hover {
+    color: #29c0f6;
+    transition-duration: 1s;
+  }
+
+  h3 {
+    padding-top: 75px;
+  }
+
+  h2, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    padding: 10px 0 10px 0;
+    font-size: 2em;
+  }
+
+  p, li {
     line-height: 1.6;
     font-size: 0.9em;
   }
@@ -58,7 +111,7 @@ html {
   }
 
   .typesetting {
-    padding: 20px 30px 0 30px;
+    padding: 20px 10px 0 10px;
   }
 
   .container {
@@ -66,10 +119,8 @@ html {
     border:rgb(219, 219, 219) solid 5px;
   }
 
-  .black:hover {
-    background-color: darkslategray;
-    transition-duration: 1s;
-    
+  .container-full {
+    border:rgb(219, 219, 219) solid 5px;
   }
 
   .col {
@@ -99,8 +150,10 @@ html {
 
 }
 
+/*        TABLET & MEDIUM DEVICES         */
+/*          STYLING STARTS HERE           */
 
-@media only screen and (min-width: 720px) {
+@media only screen and (min-width: 768px) {
   
   .page-wrapper {
     width: 80%;
@@ -121,10 +174,17 @@ html {
   .col-12-M {width: 100%;}
 }
 
+/*        DESKTOP & LARGER DEVICES         */
+/*          STYLING STARTS HERE            */
+
 @media only screen and (min-width: 1200px) {
   
   .page-wrapper {
     width: 60%;
+  }
+
+  .typesetting {
+    padding: 20px 30px 0 30px;
   }
 
   .col-1-L {width: 8.33%;}
