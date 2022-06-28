@@ -65,7 +65,8 @@ html {
 
   #hero-title {
     font-size: 0.8em;
-    padding: 100px 0 5px 5px;
+    margin: 100px 0 5px 5px;
+    display: inline-block;
   }
 
   .main-headings {
@@ -77,19 +78,24 @@ html {
 
   .links {
     color: black;
-    transition-duration: 1s;
+    transition-duration: 0.4s;
   }
 
   .links:hover {
-    color: #29c0f6;
-    transition-duration: 1s;
+    color: #E00084;
+    transition-duration: 0.4s;
   }
 
-  h3 {
+  .link-style {
+    font-family: 'Roboto' sans-serif;
+    font-weight: 600;
+  }
+
+  .top-spacer {
     padding-top: 75px;
   }
 
-  h2, h4, h5, h6 {
+  h2, h4, {
     font-family: 'Roboto', sans-serif;
     font-weight: 600;
     padding: 10px 0 10px 0;
