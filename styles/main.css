@@ -4,7 +4,7 @@
   text-decoration: none;
   list-style-type: none;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', 'helvetica', sans-serif;
 }
 
 html {
@@ -16,7 +16,10 @@ html {
 .magenta {background-color: #E00084;}
 .yellow {background-color: #f9f94d;}
 .blue {background-color: #29c0f6;}
-.black {background-color: #111111;}
+.black {
+  background-color: #111111;
+  transition-duration: 1s;
+}
 .white {background-color: #ffffff;}
 
 /*        MOBILE FIRST         */
@@ -34,7 +37,7 @@ html {
   }
 
   h2, h3, h4, h5, h6 {
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 600;
     padding: 10px 0 10px 0;
     font-size: 3.6em;
@@ -61,6 +64,12 @@ html {
   .container {
     height: 300px;
     border:rgb(219, 219, 219) solid 5px;
+  }
+
+  .black:hover {
+    background-color: darkslategray;
+    transition-duration: 1s;
+    
   }
 
   .col {
@@ -94,7 +103,7 @@ html {
 @media only screen and (min-width: 720px) {
   
   .page-wrapper {
-    width: 85%;
+    width: 80%;
     margin: 0 auto;
   }
   
@@ -112,10 +121,10 @@ html {
   .col-12-M {width: 100%;}
 }
 
-@media only screen and (min-width: 1080px) {
+@media only screen and (min-width: 1200px) {
   
   .page-wrapper {
-    width: 75%;
+    width: 60%;
   }
 
   .col-1-L {width: 8.33%;}
