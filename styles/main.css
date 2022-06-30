@@ -65,7 +65,7 @@ html {
 
   #hero-title {
     font-size: 0.8em;
-    margin: 100px 0 5px 5px;
+    margin: 40px 0 5px 5px;
     display: inline-block;
   }
 
@@ -197,6 +197,10 @@ html {
   .container-full {
     border:rgb(219, 219, 219) solid 5px;
     padding: 0 40px;
+  }
+
+  #hero-title {
+    margin: 100px 0 5px 5px;
   }
   
   .col-1-M {width: 8.33%;}
