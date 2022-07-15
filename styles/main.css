@@ -105,6 +105,12 @@ html {
     display: block;
   }
 
+  .special-image {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+  }
+
   .image-space {
     padding: 25px 0px;
   }
@@ -228,6 +234,13 @@ html {
 
   .typesetting {
     padding: 20px 30px 0 30px;
+  }
+
+  .special-image {
+    width: 100%;
+    max-width: 70%;
+    display: block;
+    margin: 0 auto;
   }
 
   .col-1-L {width: 8.33%;}
