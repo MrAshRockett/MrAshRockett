@@ -63,6 +63,10 @@ html {
     background-color: rgb(219, 219, 219);
   }
 
+  hr {
+    border: 1px solid black;
+  }
+
   #hero-title {
     font-size: 0.8em;
     margin: 40px 0 5px 5px;
